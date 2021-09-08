@@ -1,4 +1,15 @@
-# Getting Started with Create React App
+# Instruçoes
+
+> 1 - Criamos a aplicacao do 0 ultilizando o create react app pelo compando `yarn create react-app nome-do projeto`
+
+> 2 - Instalamos o [sass](https://sass-lang.com/) (Pré Processador css) no nosso projeto `yarn add node-sass@4.14.1`
+
+> 3 - Instalamos o [react router dom](https://tipscode.com.br/react-router-versao-5-guia-completo) [doc](https://reactrouter.com/web/guides/quick-start) para trabalharmos com rotas `yarn add react-router-dom`
+
+> 4 - Criamos a estrutura da nossa aplicaçao - [dicas](https://www.taniarascia.com/react-architecture-directory-structure/)
+
+> 5 - Inicializamos e ultilizamos as rotas na nossa aplicacacao
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
