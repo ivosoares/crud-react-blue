@@ -1,10 +1,13 @@
-import React from 'react'
+import React from 'react';
+import './Footer.scss';
 
 const Footer = () => {
   return (
-    <div>
-      footer
+  <footer className="footer">
+    <div className="container">
+      <p>Desenvolvido por Ivonaldo Soares via Blue EdTech</p>
     </div>
+  </footer>
   )
 }
 
