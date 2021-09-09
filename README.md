@@ -8,7 +8,16 @@
 
 > 4 - Criamos a estrutura da nossa aplicaçao - [dicas](https://www.taniarascia.com/react-architecture-directory-structure/)
 
-> 5 - Inicializamos e ultilizamos as rotas na nossa aplicacacao
+> 5 - Inicializamos e ultilizamos as rotas na nossa aplicacacao atravez do componente `BrowserRouter` que inicializa as rotas no app e atravez do componente `Route` definimos as nossas rotas e quais componentes devem ser renderizados.
+
+> 6 - Estilizamos os nossos componentes de listagem e card da musica
+
+> 7 - Atravez da Fetch API do javascript criamos a logica para efetuar uma requisicao do tipo get na tela de listagem, para efetuar a requisicao precisamos chamar o metodo fetch dentro da funcao useEffect do react porém nao passamos estados para o useEffect ficar monitorando
+
+* Referencias
+  * [Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API)
+  * [Promisses](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)
+  * [Video](https://www.youtube.com/watch?v=m3K8DP4kVXQ&ab_channel=RogerMelo)
 ## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
