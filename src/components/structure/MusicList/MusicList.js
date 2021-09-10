@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import MusicCard from '../MusicCard/MusicCard';
 import './MusicList.scss';
+import { Api } from '../../../api/api';
 
 const MusicList = () => {
   const [musicas, setMusicas] = useState([]);
@@ -8,14 +9,13 @@ const MusicList = () => {
   useEffect(()=> {
     getMusic();
   }, [])
-  
-  const url = 'http://localhost:3002/musicas';
 
   const getMusic = async () => {
-    const response = await fetch(url);
+    //GET - estou enviando uma requisao get para o backend.
+    // response = a resposta que o servidor traz da chamada (carta fechada).
+    const response = await Api.fetchGet();
+    // data = é o dado que eu recebo apos o ok da promessa do response (conteudo da carta).
     const data = await response.json();
-    console.log(response);
-    console.log(data);
     setMusicas(data);
   }
 

@@ -3,6 +3,7 @@
 
 .content {
   @include container;
+  flex: 1;
   &-title {
     color: $color-primary;
     font-size: 16px;
