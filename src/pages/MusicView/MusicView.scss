@@ -1,7 +1,6 @@
 @import '../../styles/_colors.scss';
 @import '../../styles/style.scss';
 
-
 .view {
   @include container;
   height: 100%;
@@ -23,5 +22,45 @@
       line-height: 25px;
       color: $color-primary;
     }
+  }
+  
+}
+
+.buttons {
+  @include buttons;
+  background: $color-success;
+}
+
+@keyframes customEnterOverlayAnimation {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes customLeaveOverlayAnimation {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+
+@keyframes customEnterModalAnimation {
+  0% {
+    transform: scale(0.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes customLeaveModalAnimation {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.2);
   }
 }

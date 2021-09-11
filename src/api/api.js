@@ -19,5 +19,10 @@ export const Api = {
       }),
       body: JSON.stringify(body)
     })
+  },
+  fetchDelete: (id) => {
+    return fetch(Api.url + '/delete/' + id, {
+      method: 'DELETE'
+    })
   }
 }

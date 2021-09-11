@@ -4,3 +4,19 @@
   margin: 0 auto;
   display: block;
 }
+
+@mixin buttons {
+  padding: 1rem;
+  text-align: center;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  color: #FFF;
+  border: none;
+  width: 20%;
+  transition: .4s all;
+  &:hover {
+    transform: scale(1.1);
+  }
+}
