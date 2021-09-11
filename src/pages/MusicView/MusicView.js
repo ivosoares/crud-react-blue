@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import './MusicView.scss';
 import { Api } from '../../api/api'
+import { Link } from 'react-router-dom';
 
 const MusicView = (props) => {
   const [musica, setMusica] = useState({});
@@ -31,7 +32,9 @@ const MusicView = (props) => {
         <p className="view-info-text"><b>Letra:</b> { musica.letra }</p>
         <p className="view-info-text"><b>Duracao:</b> { musica.duracao }</p>
         <p className="view-info-text"><b>Data Criacao:</b> { musica.dataCriacao }</p>
-        <button className="btn btn-success">Editar</button>
+        <Link to={`/edit/${musica._id}`} >
+          <button className="btn btn-success">Editar</button>
+        </Link>
         <button className="btn btn-danger">Excluir</button>
       </div>
     </section>

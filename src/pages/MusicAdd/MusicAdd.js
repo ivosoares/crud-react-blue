@@ -2,7 +2,7 @@ import React from 'react'
 import './MusicAdd.scss';
 import { Api } from '../../api/api'
 
-const MusicAdd = () => {
+const MusicAdd = (props) => {
   const handleSubmit = async (evento) => {
     evento.preventDefault();
     console.log(evento.target.nome.value);
@@ -22,10 +22,15 @@ const MusicAdd = () => {
       duracao: parseInt(duracao),
     }
 
-    const response = await Api.fetchPost(Musica);
-    const data = await response;
+
+    try {
+      const response = await Api.fetchPost(Musica);
+      const data = await response;
+      props.history.push('/');
+    } catch (error) {
+      console.log(error);
+    }
     
-    console.log(data);
   };
 
   return (
